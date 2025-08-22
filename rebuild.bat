@@ -3,7 +3,7 @@
 set "drive_letter=D"
 set "work_dir=%cd%"
 set "sln_name=Reader"
-set "vsdevcmd=%drive_letter%:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat"
+set "vsdevcmd=%drive_letter%:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat"
 set "publish=publish"
 set "ret=0"
 set "vers="

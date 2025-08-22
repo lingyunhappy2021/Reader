@@ -1,4 +1,4 @@
-﻿// Microsoft Visual C++ generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -44,33 +44,33 @@ IDI_BOOK                ICON                    "book.ico"
 
 IDC_READER MENU
 BEGIN
-POPUP "文件(&F)"
+POPUP "�ļ�(&F)"
 BEGIN
-MENUITEM "打开(&O)", IDM_OPEN
+MENUITEM "��(&O)", IDM_OPEN
 MENUITEM SEPARATOR
-MENUITEM "清空(&C)", IDM_CLEAR
+MENUITEM "���(&C)", IDM_CLEAR
 MENUITEM SEPARATOR
-MENUITEM "退出(&X)", IDM_EXIT
+MENUITEM "�˳�(&X)", IDM_EXIT
 END
-MENUITEM "目录(&V)", IDM_VIEW
-MENUITEM "书签(&M)", IDM_MARK
-POPUP "设置(&S)"
+MENUITEM "Ŀ¼(&V)", IDM_VIEW
+MENUITEM "��ǩ(&M)", IDM_MARK
+POPUP "����(&S)"
 BEGIN
-MENUITEM "显示设置", IDM_DISPLAY
-MENUITEM "基本设置", IDM_CONFIG
-MENUITEM "高级设置", IDM_ADVSET
-MENUITEM "按键设置", IDM_KEYSET
-MENUITEM "标签设置", IDM_TAGSET
+MENUITEM "��ʾ����", IDM_DISPLAY
+MENUITEM "��������", IDM_CONFIG
+MENUITEM "�߼�����", IDM_ADVSET
+MENUITEM "��������", IDM_KEYSET
+MENUITEM "��ǩ����", IDM_TAGSET
 MENUITEM SEPARATOR
-MENUITEM "在线小说", IDM_ONLINE
+MENUITEM "����С˵", IDM_ONLINE
 MENUITEM SEPARATOR
-MENUITEM "还原默认设置", IDM_DEFAULT
+MENUITEM "��ԭĬ������", IDM_DEFAULT
 END
-POPUP "帮助(&H)"
+POPUP "����(&H)"
 BEGIN
-MENUITEM "代理设置", IDM_PROXY
+MENUITEM "��������", IDM_PROXY
 MENUITEM SEPARATOR
-MENUITEM "关于 ...", IDM_ABOUT
+MENUITEM "���� ...", IDM_ABOUT
 END
 END
 
@@ -96,157 +96,157 @@ IDD_ABOUTBOX DIALOGEX 0, 0, 178, 149
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确认", IDOK, 121, 125, 50, 17, WS_GROUP
-PUSHBUTTON      "打赏", IDC_BUTTON_REWARD, 7, 125, 50, 17
-PUSHBUTTON      "关注", IDC_BUTTON_FOLLOW, 9, 32, 50, 17
+DEFPUSHBUTTON   "ȷ��", IDOK, 121, 125, 50, 17, WS_GROUP
+PUSHBUTTON      "����", IDC_BUTTON_REWARD, 7, 125, 50, 17
+PUSHBUTTON      "��ע", IDC_BUTTON_FOLLOW, 9, 32, 50, 17
 CTEXT           "Reader, Version x.x.x.x", IDC_STATIC_VERSION, 7, 7, 164, 8, SS_NOPREFIX
 LTEXT           "Copyright (C) 2019-2022", IDC_STATIC, 7, 102, 164, 8
-LTEXT           "作者：余彬彬", IDC_STATIC, 7, 80, 164, 8
-LTEXT           "邮件：binbyu@qq.com", IDC_STATIC, 7, 91, 164, 8
-LTEXT           "源码地址：https://github.com/binbyu/Reader", IDC_STATIC_LINK, 7, 113, 164, 8
-LTEXT           "及时获取版本更新, 和更多使用技巧", IDC_STATIC, 9, 53, 164, 8
-LTEXT           "Reader 微信公众号：", IDC_STATIC, 64, 36, 109, 8
+LTEXT           "���ߣ�����", IDC_STATIC, 7, 80, 164, 8
+LTEXT           "�ʼ���binbyu@qq.com", IDC_STATIC, 7, 91, 164, 8
+LTEXT           "Դ���ַ��https://github.com/binbyu/Reader", IDC_STATIC_LINK, 7, 113, 164, 8
+LTEXT           "��ʱ��ȡ�汾����, �͸���ʹ�ü���", IDC_STATIC, 9, 53, 164, 8
+LTEXT           "Reader ΢�Ź��ںţ�", IDC_STATIC, 64, 36, 109, 8
 GROUPBOX        "", IDC_STATIC, 7, 23, 164, 44
 END
 
 IDD_SETTING DIALOGEX 0, 0, 179, 268
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "基本设置"
+CAPTION "��������"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 COMBOBOX        IDC_COMBO_SPEED, 120, 20, 40, 115, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_LEFTLINE, 120, 36, 40, 14, ES_AUTOHSCROLL
-CONTROL         "禁用鼠标点击翻页", IDC_RADIO_MODE1, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 20, 54, 80, 10
-CONTROL         "鼠标左右键点击翻页", IDC_RADIO_MODE2, "Button", BS_AUTORADIOBUTTON, 20, 69, 88, 10
-CONTROL         "鼠标左键点击左右侧翻页", IDC_RADIO_MODE3, "Button", BS_AUTORADIOBUTTON, 20, 84, 104, 10
-CONTROL         "翻页", IDC_RADIO_ATPAGE, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 108, 121, 32, 10
-CONTROL         "滚动", IDC_RADIO_ATWHEEL, "Button", BS_AUTORADIOBUTTON, 143, 121, 32, 10
+CONTROL         "�����������ҳ", IDC_RADIO_MODE1, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 20, 54, 80, 10
+CONTROL         "������Ҽ������ҳ", IDC_RADIO_MODE2, "Button", BS_AUTORADIOBUTTON, 20, 69, 88, 10
+CONTROL         "������������Ҳ෭ҳ", IDC_RADIO_MODE3, "Button", BS_AUTORADIOBUTTON, 20, 84, 104, 10
+CONTROL         "��ҳ", IDC_RADIO_ATPAGE, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 108, 121, 32, 10
+CONTROL         "����", IDC_RADIO_ATWHEEL, "Button", BS_AUTORADIOBUTTON, 143, 121, 32, 10
 COMBOBOX        IDC_COMBO_APM, 70, 135, 54, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_ELAPSE, 127, 135, 24, 14, ES_AUTOHSCROLL
-CONTROL         "隐藏任务栏图标", IDC_CHECK_TASKBAR, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 175, 72, 10
-CONTROL         "最小化托盘", IDC_CHECK_TRAY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 104, 175, 56, 10
-CONTROL         "左右键同时按下隐藏窗口", IDC_CHECK_LRHIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 211, 104, 10
-DEFPUSHBUTTON   "确定", IDOK, 68, 247, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 122, 247, 50, 14
-GROUPBOX        "翻页设置", IDC_STATIC, 7, 7, 165, 93
-LTEXT           "文本滚动速度", IDC_STATIC, 20, 22, 49, 8
-LTEXT           "自动翻页时间", IDC_STATIC, 20, 137, 49, 8
-LTEXT           "毫秒", IDC_STATIC, 155, 143, 17, 8
-GROUPBOX        "窗口设置", IDC_STATIC, 7, 161, 165, 29
-GROUPBOX        "快捷设置", IDC_STATIC, 7, 196, 165, 45
-LTEXT           "自动翻页模式", IDC_STATIC, 20, 121, 49, 8
-GROUPBOX        "自动翻页", IDC_STATIC, 7, 107, 165, 47
-LTEXT           "保留上页行数(单位：行)", IDC_STATIC, 20, 38, 95, 8
-CONTROL         "ESC键隐藏窗口", IDC_CHECK_ESCHIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 227, 69, 10
+CONTROL         "����������ͼ��", IDC_CHECK_TASKBAR, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 175, 72, 10
+CONTROL         "��С������", IDC_CHECK_TRAY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 104, 175, 56, 10
+CONTROL         "���Ҽ�ͬʱ�������ش���", IDC_CHECK_LRHIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 211, 104, 10
+DEFPUSHBUTTON   "ȷ��", IDOK, 68, 247, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 122, 247, 50, 14
+GROUPBOX        "��ҳ����", IDC_STATIC, 7, 7, 165, 93
+LTEXT           "�ı������ٶ�", IDC_STATIC, 20, 22, 49, 8
+LTEXT           "�Զ���ҳʱ��", IDC_STATIC, 20, 137, 49, 8
+LTEXT           "����", IDC_STATIC, 155, 143, 17, 8
+GROUPBOX        "��������", IDC_STATIC, 7, 161, 165, 29
+GROUPBOX        "�������", IDC_STATIC, 7, 196, 165, 45
+LTEXT           "�Զ���ҳģʽ", IDC_STATIC, 20, 121, 49, 8
+GROUPBOX        "�Զ���ҳ", IDC_STATIC, 7, 107, 165, 47
+LTEXT           "������ҳ����(��λ����)", IDC_STATIC, 20, 38, 95, 8
+CONTROL         "ESC�����ش���", IDC_CHECK_ESCHIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 227, 69, 10
 END
 
 IDD_JUMP_PROGRESS DIALOGEX 0, 0, 117, 58
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "进度百分百跳转"
+CAPTION "���Ȱٷְ���ת"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确定", IDOK, 7, 37, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 59, 37, 50, 14
+DEFPUSHBUTTON   "ȷ��", IDOK, 7, 37, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 59, 37, 50, 14
 EDITTEXT        IDC_EDIT_JP, 34, 7, 51, 14, ES_AUTOHSCROLL
-LTEXT           "进度：", IDC_STATIC, 7, 9, 25, 8
+LTEXT           "���ȣ�", IDC_STATIC, 7, 9, 25, 8
 LTEXT           "%", IDC_STATIC, 87, 9, 8, 8
 END
 
 IDD_PROXY DIALOGEX 0, 0, 180, 141
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "代理设置"
+CAPTION "��������"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确定", IDOK, 38, 120, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 92, 120, 50, 14
+DEFPUSHBUTTON   "ȷ��", IDOK, 38, 120, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 92, 120, 50, 14
 EDITTEXT        IDC_EDIT_PROXY_ADDR, 64, 32, 87, 12, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_PROXY_PORT, 64, 51, 87, 12, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_PROXY_USER, 64, 70, 87, 12, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_PROXY_PASS, 64, 89, 87, 12, ES_PASSWORD | ES_AUTOHSCROLL
 COMBOBOX        IDC_COMBO_PROXY, 64, 15, 87, 64, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-LTEXT           "代理类型", IDC_STATIC, 23, 15, 33, 8
-LTEXT           "地址", IDC_STATIC, 23, 34, 17, 8
-LTEXT           "端口", IDC_STATIC, 23, 53, 17, 8
-LTEXT           "用户名", IDC_STATIC, 23, 72, 25, 8
-LTEXT           "密码", IDC_STATIC, 23, 91, 17, 8
+LTEXT           "��������", IDC_STATIC, 23, 15, 33, 8
+LTEXT           "��ַ", IDC_STATIC, 23, 34, 17, 8
+LTEXT           "�˿�", IDC_STATIC, 23, 53, 17, 8
+LTEXT           "�û���", IDC_STATIC, 23, 72, 25, 8
+LTEXT           "����", IDC_STATIC, 23, 91, 17, 8
 END
 
 IDD_UPGRADE DIALOGEX 0, 0, 201, 211
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "版本更新"
+CAPTION "�汾����"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-PUSHBUTTON      "忽略此版本", IDC_BUTTON_UPGRADE_INGORE, 40, 190, 50, 14
-PUSHBUTTON      "前往下载", IDC_BUTTON_UPGRADE_DOWN, 109, 190, 50, 14
+PUSHBUTTON      "���Դ˰汾", IDC_BUTTON_UPGRADE_INGORE, 40, 190, 50, 14
+PUSHBUTTON      "ǰ������", IDC_BUTTON_UPGRADE_DOWN, 109, 190, 50, 14
 EDITTEXT        IDC_EDIT_UPGRADE_VERSION, 65, 7, 70, 14, ES_AUTOHSCROLL | ES_READONLY
-LTEXT           "版本", IDC_STATIC, 7, 9, 17, 8
-LTEXT           "更新说明", IDC_STATIC, 7, 36, 33, 8
+LTEXT           "�汾", IDC_STATIC, 7, 9, 17, 8
+LTEXT           "����˵��", IDC_STATIC, 7, 36, 33, 8
 EDITTEXT        IDC_EDIT_UPGRADE_DESC, 7, 46, 187, 134, ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
 END
 
 IDD_KEYSET DIALOGEX 0, 0, 221, 343
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "按键设置"
+CAPTION "��������"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确定", IDOK, 114, 322, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 164, 322, 50, 14
-PUSHBUTTON      "恢复默认配置", IDC_BUTTON_DEFAULT, 7, 322, 58, 14
-CONTROL         "隐藏/显示窗口", IDC_CHECK_HIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 22, 61, 10
+DEFPUSHBUTTON   "ȷ��", IDOK, 114, 322, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 164, 322, 50, 14
+PUSHBUTTON      "�ָ�Ĭ������", IDC_BUTTON_DEFAULT, 7, 322, 58, 14
+CONTROL         "����/��ʾ����", IDC_CHECK_HIDE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 22, 61, 10
 CONTROL         "", IDC_HK_HIDE, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 20, 102, 14
-CONTROL         "隐藏/显示边框", IDC_CHECK_BORDER, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 65, 61, 10
+CONTROL         "����/��ʾ�߿�", IDC_CHECK_BORDER, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 65, 61, 10
 CONTROL         "", IDC_HK_BORDER, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 63, 102, 14
-CONTROL         "全屏/退出全屏", IDC_CHECK_FULLSCREEN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 80, 61, 10
+CONTROL         "ȫ��/�˳�ȫ��", IDC_CHECK_FULLSCREEN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 80, 61, 10
 CONTROL         "", IDC_HK_FULLSCREEN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 78, 102, 14
-CONTROL         "置顶/取消置顶", IDC_CHECK_TOP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 95, 61, 10
+CONTROL         "�ö�/ȡ���ö�", IDC_CHECK_TOP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 95, 61, 10
 CONTROL         "", IDC_HK_TOP, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 93, 102, 14
-CONTROL         "打开文件", IDC_CHECK_OPEN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 110, 61, 10
+CONTROL         "���ļ�", IDC_CHECK_OPEN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 110, 61, 10
 CONTROL         "", IDC_HK_OPEN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 108, 102, 14
-CONTROL         "添加书签", IDC_CHECK_ADDMARK, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 125, 61, 10
+CONTROL         "������ǩ", IDC_CHECK_ADDMARK, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 125, 61, 10
 CONTROL         "", IDC_HK_ADDMARK, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 123, 102, 14
-CONTROL         "自动翻页", IDC_CHECK_AUTOPAGE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 140, 61, 10
+CONTROL         "�Զ���ҳ", IDC_CHECK_AUTOPAGE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 140, 61, 10
 CONTROL         "", IDC_HK_AUTOPAGE, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 138, 102, 14
-CONTROL         "全文查找", IDC_CHECK_SEARCH, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 155, 61, 10
+CONTROL         "ȫ�Ĳ���", IDC_CHECK_SEARCH, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 155, 61, 10
 CONTROL         "", IDC_HK_SEARCH, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 153, 102, 14
-CONTROL         "进度跳转", IDC_CHECK_JUMP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 170, 61, 10
+CONTROL         "������ת", IDC_CHECK_JUMP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 170, 61, 10
 CONTROL         "", IDC_HK_JUMP, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 168, 102, 14
-CONTROL         "编辑模式", IDC_CHECK_EDIT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 185, 61, 10
+CONTROL         "�༭ģʽ", IDC_CHECK_EDIT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 185, 61, 10
 CONTROL         "", IDC_HK_EDIT, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 86, 183, 102, 14
-CONTROL         "上一页", IDC_CHECK_PAGEUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 200, 61, 10
+CONTROL         "��һҳ", IDC_CHECK_PAGEUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 200, 61, 10
 CONTROL         "", IDC_HK_PAGEUP, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 198, 102, 14
-CONTROL         "下一页", IDC_CHECK_PAGEDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 215, 61, 10
+CONTROL         "��һҳ", IDC_CHECK_PAGEDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 215, 61, 10
 CONTROL         "", IDC_HK_PAGEDOWN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 213, 102, 14
-CONTROL         "上 N 行", IDC_CHECK_LINEUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 230, 61, 10
+CONTROL         "�� N ��", IDC_CHECK_LINEUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 230, 61, 10
 CONTROL         "", IDC_HK_LINEUP, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 228, 102, 14
-CONTROL         "下 N 行", IDC_CHECK_LINEDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 245, 61, 10
+CONTROL         "�� N ��", IDC_CHECK_LINEDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 245, 61, 10
 CONTROL         "", IDC_HK_LINEDOWN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 243, 102, 14
-CONTROL         "上一章", IDC_CHECK_CHAPTERUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 260, 61, 10
+CONTROL         "��һ��", IDC_CHECK_CHAPTERUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 260, 61, 10
 CONTROL         "", IDC_HK_CHAPTERUP, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 258, 102, 14
-CONTROL         "下一章", IDC_CHECK_CHAPTERDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 275, 61, 10
+CONTROL         "��һ��", IDC_CHECK_CHAPTERDOWN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 275, 61, 10
 CONTROL         "", IDC_HK_CHAPTERDOWN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 273, 102, 14
-CONTROL         "字体放大", IDC_CHECK_FONTZOOMIN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 290, 61, 10
+CONTROL         "����Ŵ�", IDC_CHECK_FONTZOOMIN, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 290, 61, 10
 CONTROL         "", IDC_HK_FONTZOOMIN, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 288, 102, 14
-CONTROL         "字体缩小", IDC_CHECK_FONTZOOMOUT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 305, 61, 10
+CONTROL         "������С", IDC_CHECK_FONTZOOMOUT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 305, 61, 10
 CONTROL         "", IDC_HK_FONTZOOMOUT, "msctls_hotkey32", WS_BORDER | WS_TABSTOP, 85, 303, 102, 14
-CONTROL         "全局快捷键", IDC_CHECK, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 134, 51, 56, 10
-GROUPBOX        "热键设置", IDC_STATIC, 7, 7, 207, 34
-GROUPBOX        "快捷键设置", IDC_STATIC, 7, 45, 207, 276
+CONTROL         "ȫ�ֿ�ݼ�", IDC_CHECK, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 134, 51, 56, 10
+GROUPBOX        "�ȼ�����", IDC_STATIC, 7, 7, 207, 34
+GROUPBOX        "��ݼ�����", IDC_STATIC, 7, 45, 207, 276
 END
 
 IDD_ADVSET DIALOGEX 0, 0, 203, 131
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "高级设置"
+CAPTION "�߼�����"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确认", IDOK, 40, 110, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 114, 110, 50, 14
-GROUPBOX        "TXT目录解析方式", IDC_STATIC, 7, 7, 189, 86
-CONTROL         "默认", IDC_RADIO_CPT_DEFAULT, "Button", BS_AUTORADIOBUTTON, 8, 25, 56, 10
-CONTROL         "关键字", IDC_RADIO_CPT_KEYWORD, "Button", BS_AUTORADIOBUTTON, 72, 25, 56, 10
-CONTROL         "正则表达式", IDC_RADIO_CPT_REGEX, "Button", BS_AUTORADIOBUTTON, 136, 25, 56, 10
+DEFPUSHBUTTON   "ȷ��", IDOK, 40, 110, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 114, 110, 50, 14
+GROUPBOX        "TXTĿ¼������ʽ", IDC_STATIC, 7, 7, 189, 86
+CONTROL         "Ĭ��", IDC_RADIO_CPT_DEFAULT, "Button", BS_AUTORADIOBUTTON, 8, 25, 56, 10
+CONTROL         "�ؼ���", IDC_RADIO_CPT_KEYWORD, "Button", BS_AUTORADIOBUTTON, 72, 25, 56, 10
+CONTROL         "�������ʽ", IDC_RADIO_CPT_REGEX, "Button", BS_AUTORADIOBUTTON, 136, 25, 56, 10
 EDITTEXT        IDC_EDIT_CPT_KEYWORD, 57, 47, 136, 14, ES_AUTOHSCROLL
-LTEXT           "以关键字开头", IDC_STATIC, 7, 50, 49, 8
-LTEXT           "正则表达式", IDC_STATIC, 7, 67, 41, 8
+LTEXT           "�Թؼ��ֿ�ͷ", IDC_STATIC, 7, 50, 49, 8
+LTEXT           "�������ʽ", IDC_STATIC, 7, 67, 41, 8
 EDITTEXT        IDC_EDIT_CPT_REGEX, 57, 65, 136, 14, ES_AUTOHSCROLL
 END
 
@@ -258,19 +258,19 @@ END
 
 IDD_TAGSET DIALOGEX 0, 0, 297, 237
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "标签设置"
+CAPTION "��ǩ����"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "关闭", IDOK, 240, 216, 50, 14
+DEFPUSHBUTTON   "�ر�", IDOK, 240, 216, 50, 14
 CTEXT           "Static", IDC_STATIC_PREVIEW, 7, 7, 283, 49, SS_CENTERIMAGE
 CONTROL         "", IDC_LIST_TAGSET, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP, 7, 65, 283, 144
-PUSHBUTTON      "新增", IDC_BUTTON_ADD, 7, 216, 50, 14
-PUSHBUTTON      "清空", IDC_BUTTON_RMALL, 59, 216, 50, 14
+PUSHBUTTON      "����", IDC_BUTTON_ADD, 7, 216, 50, 14
+PUSHBUTTON      "���", IDC_BUTTON_RMALL, 59, 216, 50, 14
 END
 
 IDD_BOOKSOURCE DIALOGEX 0, 0, 625, 254
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "书源管理"
+CAPTION "��Դ����"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 EDITTEXT        IDC_EDIT_TITLE, 204, 18, 154, 14, ES_AUTOHSCROLL
@@ -291,92 +291,92 @@ COMBOBOX        IDC_COMBO_CTX_NEXT, 461, 151, 154, 30, CBS_DROPDOWNLIST | WS_VSC
 EDITTEXT        IDC_EDIT_CTX_NEXT, 461, 166, 154, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_CTX_KEYWORD, 461, 182, 154, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_CTX_KEYWORD_TXT, 461, 198, 154, 14, ES_AUTOHSCROLL
-PUSHBUTTON      "新增", IDOK, 313, 233, 50, 14
-PUSHBUTTON      "保存", IDC_SAVE, 262, 233, 50, 14
-PUSHBUTTON      "配置说明", IDC_MANUAL, 109, 233, 50, 14
-PUSHBUTTON      "自动配置", IDC_SYNC, 160, 233, 50, 14
-PUSHBUTTON      "导入", IDC_IMPORT, 58, 233, 50, 14
-PUSHBUTTON      "导出", IDC_EXPORT, 7, 233, 50, 14
+PUSHBUTTON      "����", IDOK, 313, 233, 50, 14
+PUSHBUTTON      "����", IDC_SAVE, 262, 233, 50, 14
+PUSHBUTTON      "����˵��", IDC_MANUAL, 109, 233, 50, 14
+PUSHBUTTON      "�Զ�����", IDC_SYNC, 160, 233, 50, 14
+PUSHBUTTON      "����", IDC_IMPORT, 58, 233, 50, 14
+PUSHBUTTON      "����", IDC_EXPORT, 7, 233, 50, 14
 CONTROL         "", IDC_LIST_BOOKSRC, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP, 7, 20, 100, 200
-LTEXT           "* 书籍主页 xpath", IDC_STATIC, 124, 134, 79, 8
+LTEXT           "* �鼮��ҳ xpath", IDC_STATIC, 124, 134, 79, 8
 LTEXT           "* HOST", IDC_STATIC, 124, 37, 79, 8
-LTEXT           "书源列表", IDC_STATIC, 7, 7, 33, 8
-LTEXT           "* 搜索URL", IDC_STATIC, 124, 53, 79, 8
-LTEXT           "* 书籍名称 xpath", IDC_STATIC, 124, 118, 79, 8
-LTEXT           "   作者名称 xpath", IDC_STATIC, 124, 150, 79, 8
-LTEXT           "* 章节标题 xpath", IDC_STATIC, 379, 20, 79, 8
-LTEXT           "* 章节URL  xpath", IDC_STATIC, 379, 36, 79, 8
-LTEXT           "* 章节内容 xpath", IDC_STATIC, 381, 136, 79, 8
-LTEXT           "* 标题", IDC_STATIC, 124, 21, 79, 8
-GROUPBOX        "基本信息", IDC_STATIC, 115, 7, 247, 94
-GROUPBOX        "搜索页解析", IDC_STATIC, 115, 104, 247, 61
-GROUPBOX        "书籍章节列表解析", IDC_STATIC, 370, 7, 247, 111
-GROUPBOX        "书籍章节内容页解析", IDC_STATIC, 371, 121, 247, 126
-LTEXT           "* 参数", IDC_STATIC, 204, 69, 34, 8
-RTEXT           "    * 搜索关键字的编码格式", IDC_STATIC, 139, 84, 102, 8
-LTEXT           "* 章节列表页", IDC_STATIC, 124, 184, 79, 8
-LTEXT           "* 章节列表页 xpath", IDC_STATIC, 124, 200, 79, 8
-GROUPBOX        "书籍主页解析", IDC_STATIC, 115, 169, 247, 51
-LTEXT           "* 章节内容分页", IDC_STATIC, 381, 152, 79, 8
-LTEXT           "* 下一页关键字 xpath", IDC_STATIC, 381, 184, 79, 8
-LTEXT           "* 下一页 xpath", IDC_STATIC, 381, 168, 79, 8
-LTEXT           "* 下一页关键字", IDC_STATIC, 381, 200, 79, 8
+LTEXT           "��Դ�б�", IDC_STATIC, 7, 7, 33, 8
+LTEXT           "* ����URL", IDC_STATIC, 124, 53, 79, 8
+LTEXT           "* �鼮���� xpath", IDC_STATIC, 124, 118, 79, 8
+LTEXT           "   �������� xpath", IDC_STATIC, 124, 150, 79, 8
+LTEXT           "* �½ڱ��� xpath", IDC_STATIC, 379, 20, 79, 8
+LTEXT           "* �½�URL  xpath", IDC_STATIC, 379, 36, 79, 8
+LTEXT           "* �½����� xpath", IDC_STATIC, 381, 136, 79, 8
+LTEXT           "* ����", IDC_STATIC, 124, 21, 79, 8
+GROUPBOX        "������Ϣ", IDC_STATIC, 115, 7, 247, 94
+GROUPBOX        "����ҳ����", IDC_STATIC, 115, 104, 247, 61
+GROUPBOX        "�鼮�½��б�����", IDC_STATIC, 370, 7, 247, 111
+GROUPBOX        "�鼮�½�����ҳ����", IDC_STATIC, 371, 121, 247, 126
+LTEXT           "* ����", IDC_STATIC, 204, 69, 34, 8
+RTEXT           "    * �����ؼ��ֵı����ʽ", IDC_STATIC, 139, 84, 102, 8
+LTEXT           "* �½��б�ҳ", IDC_STATIC, 124, 184, 79, 8
+LTEXT           "* �½��б�ҳ xpath", IDC_STATIC, 124, 200, 79, 8
+GROUPBOX        "�鼮��ҳ����", IDC_STATIC, 115, 169, 247, 51
+LTEXT           "* �½����ݷ�ҳ", IDC_STATIC, 381, 152, 79, 8
+LTEXT           "* ��һҳ�ؼ��� xpath", IDC_STATIC, 381, 184, 79, 8
+LTEXT           "* ��һҳ xpath", IDC_STATIC, 381, 168, 79, 8
+LTEXT           "* ��һҳ�ؼ���", IDC_STATIC, 381, 200, 79, 8
 CONTROL         "", IDC_STATIC, "Static", SS_BLACKFRAME, 365, 7, 1, 240
 COMBOBOX        IDC_COMBO_CPT_NEXT, 459, 50, 154, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_CPT_NEXT, 459, 64, 154, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_CPT_KEYWORD, 459, 80, 154, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_CPT_KEYWORD_TXT, 459, 96, 154, 14, ES_AUTOHSCROLL
-LTEXT           "* 章节列表分页", IDC_STATIC, 379, 52, 79, 8
-LTEXT           "* 下一页关键字 xpath", IDC_STATIC, 379, 84, 79, 8
-LTEXT           "* 下一页 xpath", IDC_STATIC, 379, 68, 79, 8
-LTEXT           "* 下一页关键字", IDC_STATIC, 379, 100, 79, 8
+LTEXT           "* �½��б���ҳ", IDC_STATIC, 379, 52, 79, 8
+LTEXT           "* ��һҳ�ؼ��� xpath", IDC_STATIC, 379, 84, 79, 8
+LTEXT           "* ��һҳ xpath", IDC_STATIC, 379, 68, 79, 8
+LTEXT           "* ��һҳ�ؼ���", IDC_STATIC, 379, 100, 79, 8
 COMBOBOX        IDC_COMBO_FILTER, 461, 215, 154, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_FILTER, 461, 230, 154, 14, ES_AUTOHSCROLL
-LTEXT           "* 文本过滤", IDC_STATIC, 381, 217, 79, 8
-LTEXT           "* 过滤配置", IDC_STATIC, 381, 233, 79, 8
+LTEXT           "* �ı�����", IDC_STATIC, 381, 217, 79, 8
+LTEXT           "* ��������", IDC_STATIC, 381, 233, 79, 8
 END
 
 IDD_ONLINE DIALOGEX 0, 0, 309, 205
 STYLE DS_SETFONT | WS_THICKFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "在线小说"
+CAPTION "����С˵"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-PUSHBUTTON      "打开", IDOK, 198, 184, 50, 14
-PUSHBUTTON      "关闭", IDCANCEL, 252, 184, 50, 14
+PUSHBUTTON      "��", IDOK, 198, 184, 50, 14
+PUSHBUTTON      "�ر�", IDCANCEL, 252, 184, 50, 14
 COMBOBOX        IDC_COMBO_BS_LIST, 7, 7, 57, 191, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_QUERY_KEYWORD, 72, 7, 174, 14, ES_AUTOHSCROLL
-DEFPUSHBUTTON   "搜索", IDC_BUTTON_OL_QUERY, 252, 7, 50, 14
+DEFPUSHBUTTON   "����", IDC_BUTTON_OL_QUERY, 252, 7, 50, 14
 CONTROL         "", IDC_LIST_QUERY, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP, 7, 26, 295, 151
-PUSHBUTTON      "书源管理", IDC_BUTTON_BS_MANAGER, 7, 184, 50, 14
+PUSHBUTTON      "��Դ����", IDC_BUTTON_BS_MANAGER, 7, 184, 50, 14
 END
 
 IDD_TAGITEM DIALOGEX 0, 0, 271, 116
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "标签"
+CAPTION "��ǩ"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 DEFPUSHBUTTON   "OK", IDOK, 159, 95, 50, 14
 PUSHBUTTON      "Cancel", IDCANCEL, 213, 95, 50, 14
 EDITTEXT        IDC_EDIT_TAGKW, 41, 7, 116, 14, ES_AUTOHSCROLL
-LTEXT           "关键字", IDC_STATIC, 7, 9, 25, 8
-PUSHBUTTON      "字体", IDC_BUTTON_TAGFONT, 159, 7, 50, 14
-PUSHBUTTON      "背景颜色", IDC_BUTTON_TAGBG, 213, 7, 50, 14
+LTEXT           "�ؼ���", IDC_STATIC, 7, 9, 25, 8
+PUSHBUTTON      "����", IDC_BUTTON_TAGFONT, 159, 7, 50, 14
+PUSHBUTTON      "������ɫ", IDC_BUTTON_TAGBG, 213, 7, 50, 14
 CTEXT           "Static", IDC_STATIC_PREVIEW, 7, 32, 257, 45, SS_CENTERIMAGE
 END
 
 IDD_DISPLAYSET DIALOGEX 0, 0, 265, 274
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "显示设置"
+CAPTION "��ʾ����"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-DEFPUSHBUTTON   "确认", IDOK, 151, 256, 50, 14
-PUSHBUTTON      "取消", IDCANCEL, 208, 256, 50, 14
-CONTROL         "使用相同字体", IDC_CHECK_SAME, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 20, 106, 10
-PUSHBUTTON      "正文字体", IDC_BUTTON_TEXT_FONT, 19, 34, 50, 14
-PUSHBUTTON      "章节字体", IDC_BUTTON_CHAPTER_FONT, 76, 34, 50, 14
-PUSHBUTTON      "背景颜色", IDC_BUTTON_BGCOLOR, 19, 67, 50, 14
+DEFPUSHBUTTON   "ȷ��", IDOK, 151, 256, 50, 14
+PUSHBUTTON      "ȡ��", IDCANCEL, 208, 256, 50, 14
+CONTROL         "ʹ����ͬ����", IDC_CHECK_SAME, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 20, 106, 10
+PUSHBUTTON      "��������", IDC_BUTTON_TEXT_FONT, 19, 34, 50, 14
+PUSHBUTTON      "�½�����", IDC_BUTTON_CHAPTER_FONT, 76, 34, 50, 14
+PUSHBUTTON      "������ɫ", IDC_BUTTON_BGCOLOR, 19, 67, 50, 14
 CONTROL         IDS_FULLSRCEEN, IDC_STATIC_PICKER, "Static", SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE | WS_GROUP, 76, 66, 15, 15
-CONTROL         "启用背景图片", IDC_CHECK_BIENABLE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 103, 64, 10
+CONTROL         "���ñ���ͼƬ", IDC_CHECK_BIENABLE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 103, 64, 10
 COMBOBOX        IDC_COMBO_BIMODE, 76, 117, 50, 62, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 EDITTEXT        IDC_EDIT_BIFILE, 19, 134, 105, 14, ES_AUTOHSCROLL
 PUSHBUTTON      "...", IDC_BUTTON_BISEL, 126, 134, 17, 14
@@ -384,23 +384,23 @@ EDITTEXT        IDC_EDIT_CHARGAP, 103, 172, 40, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_LINEGAP, 103, 187, 40, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_PARAGRAPHGAP, 103, 202, 40, 14, ES_AUTOHSCROLL
 EDITTEXT        IDC_EDIT_BORDER, 103, 217, 40, 14, ES_AUTOHSCROLL
-CONTROL         "目录字体跟随文本", IDC_CHECK_MENU_FONT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 174, 80, 10
+CONTROL         "Ŀ¼��������ı�", IDC_CHECK_MENU_FONT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 174, 80, 10
 CONTROL         "Word wrap", IDC_CHECK_WORD_WRAP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 189, 51, 10
-CONTROL         "首行缩进", IDC_CHECK_INDENT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 204, 48, 10
-CONTROL         "压缩空行", IDC_CHECK_BLANKLINES, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 219, 48, 10
+CONTROL         "��������", IDC_CHECK_INDENT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 204, 48, 10
+CONTROL         "ѹ������", IDC_CHECK_BLANKLINES, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 219, 48, 10
 CONTROL         "", IDC_STATIC_PREVIEW, "Static", SS_OWNERDRAW | WS_GROUP, 147, 7, 111, 144
-GROUPBOX        "字体设置", IDC_STATIC, 7, 7, 137, 45
-GROUPBOX        "背景颜色", IDC_STATIC, 7, 56, 137, 30
-GROUPBOX        "背景图片", IDC_STATIC, 7, 90, 137, 62
-LTEXT           "显示模式：", IDC_STATIC, 19, 119, 41, 8
-GROUPBOX        "布局排版 （预览框不显示效果）", IDC_STATIC, 7, 158, 251, 94
-LTEXT           "行距 (单位：像素)", IDC_STATIC, 19, 190, 64, 8
-LTEXT           "内部边框 ( 左,上,右,下)", IDC_STATIC, 19, 220, 81, 8
-LTEXT           "段距 (单位：像素)", IDC_STATIC, 19, 205, 64, 8
-LTEXT           "字距 (单位：像素)", IDC_STATIC, 19, 175, 64, 8
+GROUPBOX        "��������", IDC_STATIC, 7, 7, 137, 45
+GROUPBOX        "������ɫ", IDC_STATIC, 7, 56, 137, 30
+GROUPBOX        "����ͼƬ", IDC_STATIC, 7, 90, 137, 62
+LTEXT           "��ʾģʽ��", IDC_STATIC, 19, 119, 41, 8
+GROUPBOX        "�����Ű� ��Ԥ������ʾЧ����", IDC_STATIC, 7, 158, 251, 94
+LTEXT           "�о� (��λ������)", IDC_STATIC, 19, 190, 64, 8
+LTEXT           "�ڲ��߿� ( ��,��,��,��)", IDC_STATIC, 19, 220, 81, 8
+LTEXT           "�ξ� (��λ������)", IDC_STATIC, 19, 205, 64, 8
+LTEXT           "�־� (��λ������)", IDC_STATIC, 19, 175, 64, 8
 CONTROL         "", IDC_STATIC, "Static", SS_BLACKFRAME, 147, 165, 1, 68
 LTEXT           "#FFFFFF", IDC_STATIC_RGB, 98, 67, 37, 14, SS_CENTERIMAGE
-CONTROL         "章前分页", IDC_CHECK_CHAPTER_PAGE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 234, 48, 10
+CONTROL         "��ǰ��ҳ", IDC_CHECK_CHAPTER_PAGE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 234, 48, 10
 END
 
 
@@ -630,163 +630,163 @@ STRINGTABLE
 BEGIN
 IDS_APP_TITLE           "Reader"
 IDC_READER              "READER"
-IDS_ERROR               "错误"
-IDS_WARN                "警告"
-IDS_SUCC                "成功"
+IDS_ERROR               "����"
+IDS_WARN                "����"
+IDS_SUCC                "�ɹ�"
 IDC_STATUSBAR           "STATUS"
-IDS_INVALID_LINEGAP     "行距错误!"
-IDS_INVALID_INBORDER    "内部边框格式错误."
-IDS_INVALID_AUTOPAGE    "自动翻页时间不正确."
+IDS_INVALID_LINEGAP     "�о����!"
+IDS_INVALID_INBORDER    "�ڲ��߿��ʽ����."
+IDS_INVALID_AUTOPAGE    "�Զ���ҳʱ�䲻��ȷ."
 END
 
 STRINGTABLE
 BEGIN
-IDS_INVALID_PORT        "端口号不正确!"
-IDS_PLS_SEL_IMG         "请选择一张图片"
-IDS_INVALID_IMG         "图片格式不正确!"
-IDS_IMG_NOT_EXIST       "图片不存在!"
-IDS_INVALID_LAYOUT      "非法背景模式!"
-IDS_INVALID_VALUE       "非法数值!"
-IDS_BOOKMARK            "书签"
-IDS_ADD_BOOKMARK_TIPS   "请确定是否添加书签?"
-IDS_OPEN_FILE_FAILED    "打开文件失败."
-IDS_UNKNOWN_FORMAT      "文件格式错误."
-IDS_EMPTY_FILE          "无法打开空文件."
-IDS_INIT_CACHE_FAIL     "初始化缓存文件失败."
-IDS_SAVE_CACHE_FAIL     "保存缓存文件失败."
-IDS_EMPTY_KEYWORD       "关键字不能为空!"
-IDS_EMPTY_REGEX         "正则表达式不能为空!"
-IDS_INVALID_REGEX       "正则表达式错误!"
+IDS_INVALID_PORT        "�˿ںŲ���ȷ!"
+IDS_PLS_SEL_IMG         "��ѡ��һ��ͼƬ"
+IDS_INVALID_IMG         "ͼƬ��ʽ����ȷ!"
+IDS_IMG_NOT_EXIST       "ͼƬ������!"
+IDS_INVALID_LAYOUT      "�Ƿ�����ģʽ!"
+IDS_INVALID_VALUE       "�Ƿ���ֵ!"
+IDS_BOOKMARK            "��ǩ"
+IDS_ADD_BOOKMARK_TIPS   "��ȷ���Ƿ�������ǩ?"
+IDS_OPEN_FILE_FAILED    "���ļ�ʧ��."
+IDS_UNKNOWN_FORMAT      "�ļ���ʽ����."
+IDS_EMPTY_FILE          "�޷��򿪿��ļ�."
+IDS_INIT_CACHE_FAIL     "��ʼ�������ļ�ʧ��."
+IDS_SAVE_CACHE_FAIL     "���滺���ļ�ʧ��."
+IDS_EMPTY_KEYWORD       "�ؼ��ֲ���Ϊ��!"
+IDS_EMPTY_REGEX         "�������ʽ����Ϊ��!"
+IDS_INVALID_REGEX       "�������ʽ����!"
 END
 
 STRINGTABLE
 BEGIN
-IDS_SAVE_TEXT_TIPS      "文本有改动，是否保存？"
-IDS_SAVE_FILE           "文件保存"
-IDS_SAVE_FAIL           "保存文本失败"
-IDS_KEYVALUE_EMPTY      "【%s】\r\n\r\n按键不能为空, 请重新设置."
-IDS_KEYVALUE_DUPLICATE  "【%s】\r\n\r\n按键已经使用, 请重新设置."
-IDS_REGISTER_FAIL       "注册热键【%s】失败, 可能该热键已经被占用.\r\n请进入【设置】>【按键设置】重新设置该热键!"
-IDS_REQUEST_CONTENT_FAIL "请求章节文本失败.\r\n请重试."
-IDS_BOOKSOURCE_EXIST    "该书源已经存在."
-IDS_BOOKSOURCE_FULL     "最多支持 %d 个书源."
-IDS_FIELED_EMPTY        "字段不能为空."
-IDS_NO_BOOKSOURCE       "请先在左侧书源列表上面选择一个书源."
-IDS_NETWORK_FAIL        "网络请求失败, 请确定网络连接是否正常!"
-IDS_DECOMPRESS_FAIL     "解压数据失败\r\n请重试."
-IDS_PARSE_FAIL          "未找到该书籍\r\n或者解析数据失败，请确认xpath是否正确."
-IDS_SELECT_BOOKSOURCE   "请选择一个书源."
-IDS_QUERY               "搜索"
+IDS_SAVE_TEXT_TIPS      "�ı��иĶ����Ƿ񱣴棿"
+IDS_SAVE_FILE           "�ļ�����"
+IDS_SAVE_FAIL           "�����ı�ʧ��"
+IDS_KEYVALUE_EMPTY      "��%s��\r\n\r\n��������Ϊ��, ����������."
+IDS_KEYVALUE_DUPLICATE  "��%s��\r\n\r\n�����Ѿ�ʹ��, ����������."
+IDS_REGISTER_FAIL       "ע���ȼ���%s��ʧ��, ���ܸ��ȼ��Ѿ���ռ��.\r\n����롾���á�>���������á��������ø��ȼ�!"
+IDS_REQUEST_CONTENT_FAIL "�����½��ı�ʧ��.\r\n������."
+IDS_BOOKSOURCE_EXIST    "����Դ�Ѿ�����."
+IDS_BOOKSOURCE_FULL     "���֧�� %d ����Դ."
+IDS_FIELED_EMPTY        "�ֶβ���Ϊ��."
+IDS_NO_BOOKSOURCE       "�����������Դ�б�����ѡ��һ����Դ."
+IDS_NETWORK_FAIL        "��������ʧ��, ��ȷ�����������Ƿ�����!"
+IDS_DECOMPRESS_FAIL     "��ѹ����ʧ��\r\n������."
+IDS_PARSE_FAIL          "δ�ҵ����鼮\r\n���߽�������ʧ�ܣ���ȷ��xpath�Ƿ���ȷ."
+IDS_SELECT_BOOKSOURCE   "��ѡ��һ����Դ."
+IDS_QUERY               "����"
 END
 
 STRINGTABLE
 BEGIN
-IDS_STOP_QUERY          "停止搜索"
-IDS_TITLE               "标题"
-IDS_HIDE_SHOW_WINDOW    "隐藏/显示窗口"
-IDS_HIDE_SHOW_BORDER    "隐藏/显示边框"
-IDS_FULLSRCEEN          "全屏/退出全屏"
-IDS_TOPMOST             "置顶/取消置顶"
-IDS_OPEN_FILE           "打开文件"
-IDS_ADD_BOOKMARK        "添加书签"
-IDS_AUTO_PAGE           "自动翻页"
-IDS_TEXT_SEARCH         "全文查找"
-IDS_PROGRESS_JUMP       "进度跳转"
-IDS_EDIT_MODE           "编辑模式"
-IDS_PAGE_UP             "上一页"
-IDS_PAGE_DOWN           "下一页"
-IDS_LINE_UP             "上 N 行"
-IDS_LINE_DOWN           "下 N 行"
+IDS_STOP_QUERY          "ֹͣ����"
+IDS_TITLE               "����"
+IDS_HIDE_SHOW_WINDOW    "����/��ʾ����"
+IDS_HIDE_SHOW_BORDER    "����/��ʾ�߿�"
+IDS_FULLSRCEEN          "ȫ��/�˳�ȫ��"
+IDS_TOPMOST             "�ö�/ȡ���ö�"
+IDS_OPEN_FILE           "���ļ�"
+IDS_ADD_BOOKMARK        "������ǩ"
+IDS_AUTO_PAGE           "�Զ���ҳ"
+IDS_TEXT_SEARCH         "ȫ�Ĳ���"
+IDS_PROGRESS_JUMP       "������ת"
+IDS_EDIT_MODE           "�༭ģʽ"
+IDS_PAGE_UP             "��һҳ"
+IDS_PAGE_DOWN           "��һҳ"
+IDS_LINE_UP             "�� N ��"
+IDS_LINE_DOWN           "�� N ��"
 END
 
 STRINGTABLE
 BEGIN
-IDS_CHAPTER_UP          "上一章"
-IDS_CHAPTER_DOWN        "下一章"
-IDS_FIXED_TIME          "固定时间"
-IDS_DYNAMIC_CALC        "乘以字数"
-IDS_ENABLE_PROXY        "使用代理"
-IDS_DISABLE_PROXY       "不使用代理"
-IDS_STRETCH             "拉伸缩放"
-IDS_TILE                "平铺"
-IDS_TILEFLIP            "旋转平铺"
-IDS_MENU_OPEN           "打开(&O)"
-IDS_MENU_CLEAR          "清空(&C)"
-IDS_MENU_EXIT           "退出(&X)"
-IDS_MENU_FILE           "文件(&F)"
-IDS_EDIT_MODE_TIPS      "当前为【编辑模式】，再次使用快捷键可退出"
-IDS_RESTORE_DEFAULT     "确定需要恢复默认设置吗？"
-IDS_FONT_ZOOMIN         "字体放大"
+IDS_CHAPTER_UP          "��һ��"
+IDS_CHAPTER_DOWN        "��һ��"
+IDS_FIXED_TIME          "�̶�ʱ��"
+IDS_DYNAMIC_CALC        "��������"
+IDS_ENABLE_PROXY        "ʹ�ô���"
+IDS_DISABLE_PROXY       "��ʹ�ô���"
+IDS_STRETCH             "��������"
+IDS_TILE                "ƽ��"
+IDS_TILEFLIP            "��תƽ��"
+IDS_MENU_OPEN           "��(&O)"
+IDS_MENU_CLEAR          "���(&C)"
+IDS_MENU_EXIT           "�˳�(&X)"
+IDS_MENU_FILE           "�ļ�(&F)"
+IDS_EDIT_MODE_TIPS      "��ǰΪ���༭ģʽ�����ٴ�ʹ�ÿ�ݼ����˳�"
+IDS_RESTORE_DEFAULT     "ȷ����Ҫ�ָ�Ĭ��������"
+IDS_FONT_ZOOMIN         "����Ŵ�"
 END
 
 STRINGTABLE
 BEGIN
-IDS_FONT_ZOOMOUT        "字体缩小"
-IDS_AUTOPAGING          "自动翻页中..."
-IDS_NOTEXIST_BOOKSOURCE "没有配置书源，现在去配置书源？"
-IDS_NO_BOOKSOURCE_FAIL  "没有配置书源，无法打开.ol文档"
-IDS_BOOK_NAME           "书籍名称"
-IDS_AUTHOR              "作者"
-IDS_STATUS              "状态"
-IDS_MAINPAGE            "书籍主页"
-IDS_NULL                "无"
-IDS_QUERYPAGE           "搜索页"
-IDS_ADD_COMPLETED       "新增成功"
-IDS_SAVE_COMPLETED      "保存成功"
-IDS_IMPORT_COMPLETED    "导入成功"
-IDS_IMPORT_FAILED       "导入失败"
-IDS_EXPORT_COMPLETED    "导出成功"
-IDS_EXPORT_FAILED       "导出失败"
+IDS_FONT_ZOOMOUT        "������С"
+IDS_AUTOPAGING          "�Զ���ҳ��..."
+IDS_NOTEXIST_BOOKSOURCE "û��������Դ������ȥ������Դ��"
+IDS_NO_BOOKSOURCE_FAIL  "û��������Դ���޷���.ol�ĵ�"
+IDS_BOOK_NAME           "�鼮����"
+IDS_AUTHOR              "����"
+IDS_STATUS              "״̬"
+IDS_MAINPAGE            "�鼮��ҳ"
+IDS_NULL                "��"
+IDS_QUERYPAGE           "����ҳ"
+IDS_ADD_COMPLETED       "�����ɹ�"
+IDS_SAVE_COMPLETED      "����ɹ�"
+IDS_IMPORT_COMPLETED    "����ɹ�"
+IDS_IMPORT_FAILED       "����ʧ��"
+IDS_EXPORT_COMPLETED    "�����ɹ�"
+IDS_EXPORT_FAILED       "����ʧ��"
 END
 
 STRINGTABLE
 BEGIN
-IDS_FILED_MODIFY        "书源有改动，是否放弃修改？"
-IDS_SINGLE_LINE         "单行"
-IDS_DOUBLE_LINE         "双行"
-IDS_THREE_LINE          "三行"
-IDS_FULL_PAGE           "整页"
-IDS_REQUEST_ERROR       "网络请求失败，错误码：%d"
-IDS_LOST_WARN           "同步Github书源配置会导致本地书源配置丢失，请先备份(导出)本地书源配置再继续。\r\n是否继续同步书源？"
-IDS_SYNC_FAIL           "同步Github书源配置失败，请点击【配置说明】进行手动配置。\r\n由于国内网络原因，同步失败为正常现象。"
-IDS_SYNC_SUCC           "同步Github书源配置完成"
-IDS_AUTO_SYNC           "自动配置"
-IDS_STOP_SYNC           "取消配置"
-IDS_FILE_ISEXIST        "同名文件已经存在！是否覆盖原来的文件？"
-IDS_BOOK_SOURCE         "书源"
-IDS_DELETE              "删除"
-IDS_MOVE_UP             "上移"
-IDS_MOVE_DOWN           "下移"
+IDS_FILED_MODIFY        "��Դ�иĶ����Ƿ�����޸ģ�"
+IDS_SINGLE_LINE         "����"
+IDS_DOUBLE_LINE         "˫��"
+IDS_THREE_LINE          "����"
+IDS_FULL_PAGE           "��ҳ"
+IDS_REQUEST_ERROR       "��������ʧ�ܣ������룺%d"
+IDS_LOST_WARN           "ͬ��Github��Դ���ûᵼ�±�����Դ���ö�ʧ�����ȱ���(����)������Դ�����ټ�����\r\n�Ƿ����ͬ����Դ��"
+IDS_SYNC_FAIL           "ͬ��Github��Դ����ʧ�ܣ�����������˵���������ֶ����á�\r\n���ڹ�������ԭ��ͬ��ʧ��Ϊ��������"
+IDS_SYNC_SUCC           "ͬ��Github��Դ�������"
+IDS_AUTO_SYNC           "�Զ�����"
+IDS_STOP_SYNC           "ȡ������"
+IDS_FILE_ISEXIST        "ͬ���ļ��Ѿ����ڣ��Ƿ񸲸�ԭ�����ļ���"
+IDS_BOOK_SOURCE         "��Դ"
+IDS_DELETE              "ɾ��"
+IDS_MOVE_UP             "����"
+IDS_MOVE_DOWN           "����"
 END
 
 STRINGTABLE
 BEGIN
-IDS_DELETE_FILE_CFM     "确定要【移除】该本书籍吗？\r\n%s"
-IDS_CLEAR_ALL_FILES     "确定要【清空】全部书籍吗？"
-IDS_ENABLE              "启用"
-IDS_DISABLE             "禁用"
-IDS_KEYWORD             "关键字"
-IDS_FONT                "字体"
-IDS_BG_COLOR            "背景颜色"
-IDS_EDIT                "编辑"
-IDS_TAGSET_FULL         "标签已满"
-IDS_TAGITEM_EXIST       "标签已存在"
-IDS_ID                  "编号"
-IDS_DELETE_CFM          "确认删除？"
-IDS_RMALL_CFM           "确认清空？"
-IDS_BS_SAVE_TIP         "即将覆盖书源 ""%s""，是否继续保存？"
-IDS_REFRESH_TIP         "获取最新章节信息？"
-IDS_REGEX               "正则表达式"
+IDS_DELETE_FILE_CFM     "ȷ��Ҫ���Ƴ����ñ��鼮��\r\n%s"
+IDS_CLEAR_ALL_FILES     "ȷ��Ҫ����ա�ȫ���鼮��"
+IDS_ENABLE              "����"
+IDS_DISABLE             "����"
+IDS_KEYWORD             "�ؼ���"
+IDS_FONT                "����"
+IDS_BG_COLOR            "������ɫ"
+IDS_EDIT                "�༭"
+IDS_TAGSET_FULL         "��ǩ����"
+IDS_TAGITEM_EXIST       "��ǩ�Ѵ���"
+IDS_ID                  "���"
+IDS_DELETE_CFM          "ȷ��ɾ����"
+IDS_RMALL_CFM           "ȷ����գ�"
+IDS_BS_SAVE_TIP         "����������Դ ""%s""���Ƿ�������棿"
+IDS_REFRESH_TIP         "��ȡ�����½���Ϣ��"
+IDS_REGEX               "�������ʽ"
 END
 
 STRINGTABLE
 BEGIN
-IDS_BS_EXIST_TIP        "已经存在书源【%s】，是否替换为新配置？"
-IDS_CLEAR               "清空"
-IDS_CLEAR_BS_CFM        "确定要【清空】所有书源配置吗？"
-IDS_DELETE_BS_CFM       "确定要【删除】该项书源配置吗？"
-IDS_INVALID_CHARGAP     "字距错误!"
-IDS_INVALID_PARAGRAPHGAP "段距错误!"
+IDS_BS_EXIST_TIP        "�Ѿ�������Դ��%s�����Ƿ��滻Ϊ�����ã�"
+IDS_CLEAR               "���"
+IDS_CLEAR_BS_CFM        "ȷ��Ҫ����ա�������Դ������"
+IDS_DELETE_BS_CFM       "ȷ��Ҫ��ɾ����������Դ������"
+IDS_INVALID_CHARGAP     "�־����!"
+IDS_INVALID_PARAGRAPHGAP "�ξ����!"
 END
 
 #endif    // English (United States) resources
